@@ -1,54 +1,54 @@
 /* Custom Font Definition */
 @font-face {
-    font-family: 'HolbertonIcons'; /* Name of the custom font */
-    src: url('fonts/holbertonicons.woff2') format('woff2'), /* Modern browsers */
-         url('fonts/holbertonicons.woff') format('woff'),   /* Fallback for older browsers */
-         url('fonts/holbertonicons.ttf') format('truetype'); /* TrueType fallback */
+    font-family: 'HolbertonIcons'; 
+    src: url('fonts/holbertonicons.woff2') format('woff2'), 
+         url('fonts/holbertonicons.woff') format('woff'),   
+         url('fonts/holbertonicons.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
   }
   
-  /* General Section Styling */
+  
   #what-we-do {
     max-width: 1000px; /* Center content with a max width */
     margin: 0 auto; /* Center horizontally */
-    padding: 40px 20px; /* Add space around the content */
-    box-sizing: border-box; /* Include padding in width */
+    padding: 40px 20px; 
+    box-sizing: border-box; 
     text-align: center; /* Center align text */
-    font-family: Arial, sans-serif; /* Default font */
-    background-color:white; /* Light background for contrast */
-    color: #333; /* Neutral text color */
+    font-family: Arial, sans-serif; 
+    background-color:white; 
+    color: #333;
   }
   
   #what-we-do h2 {
-    font-size: 2rem; /* Larger font for the section title */
-    margin-bottom: 20px; /* Space below the title */
+    font-size: 2rem; 
+    margin-bottom: 20px; 
   }
   
   #what-we-do p {
     font-size: 1rem;
     margin-bottom: 30px;
-    color: #555; /* Slightly muted text for paragraph */
+    color: #555; 
     max-width: 1000px;
   }
   
-  /* Services Grid */
+  
   .services {
     display: flex;
-    justify-content: space-between; /* Evenly distribute items */
+    justify-content: space-between; 
     flex-wrap: wrap; /* Allow wrapping for smaller screens */
-    gap: 20px; /* Add spacing between items */
+    gap: 20px; 
   }
   
   .service {
-    width: 22%; /* Approx. 4 items fit in a row */
+    width: 22%; 
     text-align: center; /* Center align content */
-    box-sizing: border-box; /* Include padding in width */
+    box-sizing: border-box; 
   }
   
   .service span {
-    font-family: 'HolbertonIcons'; /* Use the linked custom font */
-    font-size: 40px; /* Size for icons */
+    font-family: 'HolbertonIcons'; 
+    font-size: 40px; 
     color: #007bff; /* Primary color for icons */
     display: inline-block;
     margin-bottom: 10px; /* Space below the icon */
@@ -56,13 +56,13 @@
   
   .service h3 {
     font-size: 1.2rem;
-    margin: 10px 0; /* Space above and below */
-    color: #333; /* Neutral color for headings */
+    margin: 10px 0; 
+    color: #333; 
   }
   
   .service p {
     font-size: 0.9rem;
-    color: #666; /* Muted color for descriptions */
+    color: #666; 
   }
 
 .holberton_school-icon-ic_sound:before {
@@ -82,9 +82,9 @@
 }
 
 .service span {
-  font-family: 'HolbertonIcons'; /* Use the linked custom font */
-  font-size: 40px; /* Adjust icon size */
-  color: #007bff; /* Icon color */
+  font-family: 'HolbertonIcons'; 
+  font-size: 40px; 
+  color: #007bff; 
   display: inline-block;
   margin-bottom: 10px;
 }
@@ -94,12 +94,12 @@
   /* Responsive Design */
   @media (max-width: 480px) {
     .services {
-      flex-direction: column; /* Stack items vertically */
-      align-items: center; /* Center items horizontally */
+      flex-direction: column; 
+      align-items: center; 
     }
   
     .service {
-      width: 100%; /* Full width for each item */
-      margin-bottom: 20px; /* Space between stacked items */
+      width: 100%; 
+      margin-bottom: 20px; 
     }
 }
