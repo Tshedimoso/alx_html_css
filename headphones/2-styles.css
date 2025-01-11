@@ -10,7 +10,7 @@
     padding: 20px;
 }
 
-/* Heading and Paragraph Styling */
+
 #our-results h2 {
     font-size: 2rem;
     margin-bottom: 20px;
@@ -20,47 +20,47 @@
     margin-bottom: 30px;
     max-width: 1000px;
     font-size: 1rem;
-    color: #f5f5f5; /* Muted white text */
+    color: #f5f5f5; 
     align-self: center;
 }
 
-/* Results Grid */
+
 .results {
     display: flex;
-    justify-content: space-between; /* Evenly distribute items */
+    justify-content: space-between; 
     flex-wrap: wrap; /* Allow wrapping for smaller screens */
-    gap: 20px; /* Add spacing between items */
+    gap: 20px; 
 }
 
 .result {
-    width: 22%; /* Approx. 4 items fit in a row */
-    text-align: center; /* Center align content */
-    box-sizing: border-box; /* Include padding in width */
-    display: flex; /* Use flexbox for vertical alignment */
-    flex-direction: column; /* Stack the image and text */
+    width: 22%;
+    text-align: center; 
+    box-sizing: border-box; 
+    display: flex;
+    flex-direction: column;
     align-items: center; /* Center content horizontally */
     justify-content: center; /* Center content vertically */
 }
 
 .result img {
-    width: 50%; /* Make the image take up the entire width */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 8px; /* Slight rounding of image corners */
-    margin-bottom: 15px; /* Space below the image */
+    width: 50%;
+    height: auto; 
+    border-radius: 8px; 
+    margin-bottom: 15px; 
 }
 
 .result h3 {
     font-size: 1.2rem;
-    margin: 10px 0; /* Space above and below */
+    margin: 10px 0; 
 }
 
 .result p {
     font-size: 0.9rem;
-    color: #ddd; /* Slightly muted text for description */
-    text-align: center; /* Center text relative to image */
+    color: #ddd; 
+    text-align: center; 
 }
 
-/* Responsive Design */
+
 @media (max-width: 480px) {
     #our-results {
         padding: 20px 10px; /* Reduced padding for smaller screens */
