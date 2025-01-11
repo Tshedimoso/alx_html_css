@@ -1,0 +1,35 @@
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .section-items {
+    display: flex;
+    justify-content: space-between; /* Align logo left and social media right */
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto; /* Center the content */
+    padding: 0 20px;
+}
+
+footer img {
+    max-width: 150px; /* Adjust logo size */
+}
+
+footer .social-media a {
+    margin: 0 10px; /* Space between icons */
+    color: white;
+    font-size: 1.5rem; /* Icon size */
+}
+
+footer .social-media a:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+footer p {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #656363;
+}

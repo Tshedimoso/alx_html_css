@@ -1,0 +1,105 @@
+/* Custom Font Definition */
+@font-face {
+    font-family: 'HolbertonIcons'; /* Name of the custom font */
+    src: url('fonts/holbertonicons.woff2') format('woff2'), /* Modern browsers */
+         url('fonts/holbertonicons.woff') format('woff'),   /* Fallback for older browsers */
+         url('fonts/holbertonicons.ttf') format('truetype'); /* TrueType fallback */
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* General Section Styling */
+  #what-we-do {
+    max-width: 1000px; /* Center content with a max width */
+    margin: 0 auto; /* Center horizontally */
+    padding: 40px 20px; /* Add space around the content */
+    box-sizing: border-box; /* Include padding in width */
+    text-align: center; /* Center align text */
+    font-family: Arial, sans-serif; /* Default font */
+    background-color:white; /* Light background for contrast */
+    color: #333; /* Neutral text color */
+  }
+  
+  #what-we-do h2 {
+    font-size: 2rem; /* Larger font for the section title */
+    margin-bottom: 20px; /* Space below the title */
+  }
+  
+  #what-we-do p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    color: #555; /* Slightly muted text for paragraph */
+    max-width: 1000px;
+  }
+  
+  /* Services Grid */
+  .services {
+    display: flex;
+    justify-content: space-between; /* Evenly distribute items */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    gap: 20px; /* Add spacing between items */
+  }
+  
+  .service {
+    width: 22%; /* Approx. 4 items fit in a row */
+    text-align: center; /* Center align content */
+    box-sizing: border-box; /* Include padding in width */
+  }
+  
+  .service span {
+    font-family: 'HolbertonIcons'; /* Use the linked custom font */
+    font-size: 40px; /* Size for icons */
+    color: #007bff; /* Primary color for icons */
+    display: inline-block;
+    margin-bottom: 10px; /* Space below the icon */
+  }
+  
+  .service h3 {
+    font-size: 1.2rem;
+    margin: 10px 0; /* Space above and below */
+    color: #333; /* Neutral color for headings */
+  }
+  
+  .service p {
+    font-size: 0.9rem;
+    color: #666; /* Muted color for descriptions */
+  }
+
+.holberton_school-icon-ic_sound:before {
+  content: "\e90e";
+}
+
+.holberton_school-icon-ic_video:before {
+  content: "\e910";
+}
+
+.holberton_school-icon-ic_music:before {
+  content: "\e90d";
+}
+
+.holberton_school-icon-ic_hearing:before {
+  content: "\e909";
+}
+
+.service span {
+  font-family: 'HolbertonIcons'; /* Use the linked custom font */
+  font-size: 40px; /* Adjust icon size */
+  color: #007bff; /* Icon color */
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+
+  
+  /* Responsive Design */
+  @media (max-width: 480px) {
+    .services {
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center items horizontally */
+    }
+  
+    .service {
+      width: 100%; /* Full width for each item */
+      margin-bottom: 20px; /* Space between stacked items */
+    }
+}

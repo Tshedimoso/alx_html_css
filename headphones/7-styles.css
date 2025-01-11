@@ -1,0 +1,535 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  header {
+    background: url('headphones_hero_1.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  .navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    padding-right: 200px;
+  }
+  .navbar .logo img {
+    height: 30px; /* Adjust as needed */
+    padding-left: 200px;
+  }
+  .navbar ul {
+    list-style: none;
+    display: flex;
+  }
+  .navbar ul li {
+    margin: 0 15px;
+  }
+  .navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  .navbar ul li a:hover,
+  .navbar ul li a:active {
+    color: #FF6565;
+  }
+  .hero-content {
+    max-width: 1000px;
+    text-align: center;
+    margin: auto;
+  }
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 0px;
+  }
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    margin-top: 0px;
+  }
+  .hero-content button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #ff6565;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    border-radius: 50px;
+    margin-bottom: 80px;
+  }
+  .hero-content button:hover,
+  .hero-content button:active {
+    opacity: 0.9;
+  }
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .hamburger span {
+    width: 25px;
+    height: 3px;
+    background: white;
+    margin: 4px 0;
+  }
+  
+  /* Checkbox toggle for the hamburger menu */
+  #menu-toggle {
+    display: none;
+  }
+  
+  /* Responsive design */
+  @media screen and (max-width: 480px) {
+    .nav-links {
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background: black;
+      width: 100%;
+      height: calc(100vh - 60px);
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transform: translateX(100%);
+      display: non;
+    }
+  
+    /* Show menu links when checkbox is checked */
+    #menu-toggle:checked ~ .nav-links {
+      transform: translateX(0);
+    }
+  
+    /* Hamburger menu visible in mobile view */
+    .hamburger {
+      display: flex;
+    }
+  
+    .nav-links li {
+      margin: 20px 0;
+    }
+  }
+  
+  
+  /* Responsive Design */
+  @media screen and (max-width: 480px) {
+    .navbar {
+      flex-direction: column;
+    }
+    .navbar ul {
+      flex-direction: column;
+      align-items: center;
+    }
+    .navbar ul li {
+      margin: 10px 0;
+    }
+    .hero-content h1 {
+      font-size: 2rem;
+    }
+    .hero-content p {
+      font-size: 1rem;
+    }
+  }
+  /* Custom Font Definition */
+@font-face {
+    font-family: 'HolbertonIcons'; /* Name of the custom font */
+    src: url('fonts/holbertonicons.woff2') format('woff2'), /* Modern browsers */
+         url('fonts/holbertonicons.woff') format('woff'),   /* Fallback for older browsers */
+         url('fonts/holbertonicons.ttf') format('truetype'); /* TrueType fallback */
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* General Section Styling */
+  #what-we-do {
+    max-width: 1000px; /* Center content with a max width */
+    margin: 0 auto; /* Center horizontally */
+    padding: 40px 20px; /* Add space around the content */
+    box-sizing: border-box; /* Include padding in width */
+    text-align: center; /* Center align text */
+    font-family: Arial, sans-serif; /* Default font */
+    background-color:white; /* Light background for contrast */
+    color: #333; /* Neutral text color */
+  }
+  
+  #what-we-do h2 {
+    font-size: 2rem; /* Larger font for the section title */
+    margin-bottom: 20px; /* Space below the title */
+  }
+  
+  #what-we-do p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    color: #555; /* Slightly muted text for paragraph */
+    max-width: 1000px;
+  }
+  
+  /* Services Grid */
+  .services {
+    display: flex;
+    justify-content: space-between; /* Evenly distribute items */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    gap: 20px; /* Add spacing between items */
+  }
+  
+  .service {
+    width: 22%; /* Approx. 4 items fit in a row */
+    text-align: center; /* Center align content */
+    box-sizing: border-box; /* Include padding in width */
+  }
+  
+  .service span {
+    font-family: 'HolbertonIcons'; /* Use the linked custom font */
+    font-size: 40px; /* Size for icons */
+    color: #007bff; /* Primary color for icons */
+    display: inline-block;
+    margin-bottom: 10px; /* Space below the icon */
+  }
+  
+  .service h3 {
+    font-size: 1.2rem;
+    margin: 10px 0; /* Space above and below */
+    color: #333; /* Neutral color for headings */
+  }
+  
+  .service p {
+    font-size: 0.9rem;
+    color: #666; /* Muted color for descriptions */
+  }
+
+.holberton_school-icon-ic_sound:before {
+  content: "\e90e";
+}
+
+.holberton_school-icon-ic_video:before {
+  content: "\e910";
+}
+
+.holberton_school-icon-ic_music:before {
+  content: "\e90d";
+}
+
+.holberton_school-icon-ic_hearing:before {
+  content: "\e909";
+}
+
+.service span {
+  font-family: 'HolbertonIcons'; /* Use the linked custom font */
+  font-size: 40px; /* Adjust icon size */
+  color: #007bff; /* Icon color */
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+
+  
+  /* Responsive Design */
+  @media (max-width: 480px) {
+    .services {
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center items horizontally */
+    }
+  
+    .service {
+      width: 100%; /* Full width for each item */
+      margin-bottom: 20px; /* Space between stacked items */
+    }
+}
+/* General Section Styling */
+#our-results {
+    background: url('headphones_hero_2.jpg') no-repeat center center/cover;
+    height: auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Heading and Paragraph Styling */
+#our-results h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#our-results p {
+    margin-bottom: 30px;
+    max-width: 1000px;
+    font-size: 1rem;
+    color: #f5f5f5; /* Muted white text */
+    align-self: center;
+}
+
+/* Results Grid */
+.results {
+    display: flex;
+    justify-content: space-between; /* Evenly distribute items */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    gap: 20px; /* Add spacing between items */
+}
+
+.result {
+    width: 22%; /* Approx. 4 items fit in a row */
+    text-align: center; /* Center align content */
+    box-sizing: border-box; /* Include padding in width */
+    display: flex; /* Use flexbox for vertical alignment */
+    flex-direction: column; /* Stack the image and text */
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+}
+
+.result img {
+    width: 50%; /* Make the image take up the entire width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Slight rounding of image corners */
+    margin-bottom: 15px; /* Space below the image */
+}
+
+.result h3 {
+    font-size: 1.2rem;
+    margin: 10px 0; /* Space above and below */
+}
+
+.result p {
+    font-size: 0.9rem;
+    color: #ddd; /* Slightly muted text for description */
+    text-align: center; /* Center text relative to image */
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    #our-results {
+        padding: 20px 10px; /* Reduced padding for smaller screens */
+    }
+
+    .results {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .result {
+        width: 100%; /* Full width for each item */
+        margin-bottom: 20px; /* Space between stacked items */
+    }
+
+    .result img {
+        width: 80%; /* Slightly smaller image for mobile */
+    }
+}
+/* General Contact Us Section Styling */
+.contact-us {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.contact-us h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Form Styling */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #ff6565;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    border-radius: 50px;
+    margin-bottom: 80px;
+    max-width: 200px;
+    align-self: center;
+}
+
+button:hover {
+    opacity: 0,9;
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+    .contact-us {
+        padding: 20px;
+    }
+
+    #contact-form {
+        width: 100%;
+    }
+
+    input, textarea {
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+}
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .section-items {
+    display: flex;
+    justify-content: space-between; /* Align logo left and social media right */
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto; /* Center the content */
+    padding: 0 20px;
+}
+
+footer img {
+    max-width: 150px; /* Adjust logo size */
+}
+
+footer .social-media a {
+    margin: 0 10px; /* Space between icons */
+    color: white;
+    font-size: 1.5rem; /* Icon size */
+}
+
+footer .social-media a:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+footer p {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #656363;
+}
+#our-results {
+    background-image: url('headphones_hero_2.jpg');
+    color: #fcf9f9;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#our-results h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#our-results div p {
+    font-size:xx-small;
+    margin-bottom: 30px;
+}
+
+.results {
+    display: flex;
+    justify-content: space-between; /* Distribute space evenly */
+    gap: 50px; /* Add a small gap between the pentagons */
+    flex-wrap: nowrap; /* Ensure they stay on the same line */
+}
+
+
+.results {
+    display: flex;
+    justify-content: space-around; /* Spread pentagons evenly */
+    gap: 20px; /* Increase spacing between pentagons */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    max-width: 1000px; /* Ensure content stays within max width */
+    margin: 0 auto; /* Center content horizontally */
+}
+
+.result {
+    text-align: center;
+}
+
+.pentagon {
+    width: 120px;
+    height: 120px;
+    background-color: #FF6565;
+    clip-path: polygon(50% 0%, 0% 38%, 20% 100%, 80% 100%, 100% 38%);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;/* Ensure no extra space around each pentagon */
+}
+
+.pentagon h3,
+.pentagon p {
+    position: absolute;
+    color: white;
+    margin: 0;
+    text-align: center;
+}
+
+
+
+
+
+
+.pentagon h3 {
+    font-size: 1.5rem;
+    top: 30%; /* Center the heading vertically */
+}
+
+.pentagon p {
+    font-size: 1rem;
+    top: 60%; /* Position the paragraph below the heading */
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .results {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px; /* Adjust spacing for mobile */
+    }
+
+    .result {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .pentagon {
+        width: 150px; /* Increase size for better visibility on mobile */
+        height: 150px;
+    }
+}
