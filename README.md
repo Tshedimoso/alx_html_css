@@ -1,7 +1,10 @@
 Headphones Webpage
+
+
 This project is a fully responsive webpage built using HTML and CSS, with no external libraries or JavaScript. The webpage showcases a headphone brand and includes various sections such as "What We Do", "Our Results", "Contact Us", and a Footer. The task involves implementing the webpage design from scratch based on a Figma design, adhering to specific requirements and accessibility standards.
 
 Requirements
+
 No external CSS frameworks (e.g., Bootstrap).
 No JavaScript usage.
 Must be fully responsive and switch to a mobile layout when the screen width is 480px or less.
