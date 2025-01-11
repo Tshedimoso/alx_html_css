@@ -1,4 +1,4 @@
-/* General Contact Us Section Styling */
+
 .contact-us {
     background-color: #f9f9f9;
     padding: 40px 20px;
@@ -14,7 +14,7 @@
     color: #333;
 }
 
-/* Form Styling */
+
 #contact-form {
     display: flex;
     flex-direction: column;
@@ -54,7 +54,7 @@ button:hover {
     opacity: 0,9;
 }
 
-/* Mobile Responsive */
+
 @media (max-width: 480px) {
     .contact-us {
         padding: 20px;
