@@ -28,7 +28,7 @@
     padding-right: 200px;
   }
   .navbar .logo img {
-    height: 30px; /* Adjust as needed */
+    height: 30px; 
     padding-left: 200px;
   }
   .navbar ul {
@@ -95,7 +95,7 @@
     display: none;
   }
   
-  /* Responsive design */
+  
   @media screen and (max-width: 480px) {
     .nav-links {
       position: absolute;
@@ -127,7 +127,7 @@
   }
   
   
-  /* Responsive Design */
+  
   @media screen and (max-width: 480px) {
     .navbar {
       flex-direction: column;
